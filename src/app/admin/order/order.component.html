@@ -10,7 +10,7 @@
         </thead>
 
         <tbody>
-            <tr *ngFor="let good of userOrder; let i = index">
+            <tr class="user_order" *ngFor="let good of userOrder; let i = index">
                 <td class="nuber">{{i + 1}}</td>
 
                 <td class="сustomer">
@@ -29,7 +29,7 @@
                 </td>
 
                 <td class="order" *ngFor="let order of goodArr[i]">
-                    <tr>
+                    <tr class="order_info">
                         <td class="titel">
                             <tr>Назва:</tr>
                             <tr>Кількість: </tr>
