@@ -19,7 +19,6 @@ export class OrderComponent implements OnInit {
 
   constructor(
     private orderService: OrderService,
-    private compService: ComponentsService,
     private storsge: Storage,
   ) { }
 
@@ -31,16 +30,19 @@ export class OrderComponent implements OnInit {
   getOrdert(): void {
     this.orderService.getAll().subscribe(data => {
       this.userOrder = data;
-      console.log(this.userOrder);
+ /*   console.log(this.userOrder);  */
       
         this.getGoodArr()
       })
       
   }
   getGoodArr() {
-   this.goodArr.push(this.userOrder.map(vla => vla.order));
-
+    let arr = []
+    arr.push(this.userOrder.map(vla => vla.order));
+    this.goodArr = arr[0]
     console.log(this.goodArr);
+   
+
   }
   
  

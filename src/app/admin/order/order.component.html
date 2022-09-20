@@ -10,7 +10,7 @@
         </thead>
 
         <tbody>
-            <tr *ngFor="let good of userOrder; let i= index">
+            <tr *ngFor="let good of userOrder; let i = index">
                 <td class="nuber">{{i + 1}}</td>
 
                 <td class="сustomer">
@@ -36,13 +36,13 @@
                             <tr>Ціна:</tr>
                         </td>
                         <td class="info">
-                            <tr>{{order[i].name}}</tr>
-                            <tr>{{order[i].count}}</tr>
-                            <tr>{{order[i].price}}}</tr>
+                            <tr>{{order.name}}</tr>
+                            <tr>{{order.count}}</tr>
+                            <tr>{{order.price}}}</tr>
                         </td>
                     </tr>
                     <tr class="image">
-                        <img [src]="order[i].images">
+                        <img [src]="order.images">
                     </tr>
                 </td>
 
