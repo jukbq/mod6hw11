@@ -1,0 +1,46 @@
+    section {
+        width: 100vw;
+        padding: 20px 40px;
+        table {
+            width: 90%;
+            margin-top: 20px;
+            thead tr {
+                border-bottom: 2px solid #b5d8f7;
+            }
+            tbody {
+                tr {
+                    .сustomer {
+                        tr td {
+                            padding-right: 15px;
+                        }
+                    }
+                    .order {
+                        display: flex;
+                        tr {
+                            .titel {
+                                padding-right: 15px;
+                            }
+                            .info {
+                                padding-right: 15px;
+                            }
+                        }
+                        .image {
+                            width: 50%;
+                            img {
+                                height: 75px
+                            }
+                        }
+                    }
+                    .btn_tr {
+                        width: 15%;
+                        a {
+                            text-decoration: none;
+                            color: #b5d8f7;
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
